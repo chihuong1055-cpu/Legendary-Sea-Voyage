@@ -1,0 +1,491 @@
+{
+  "eventHeroes": [
+    {
+      "id": "nami_onigashima",
+      "name": "Nami (Onigashima)",
+      "tier": "UR",
+      "event": "Onigashima Arc",
+      "role": ["Support", "Damage"],
+      "element": "Lightning",
+      "stats": {
+        "hp": 1600,
+        "atk": 850,
+        "def": 550,
+        "speed": 125,
+        "critRate": 30,
+        "critDamage": 160
+      },
+      "skills": {
+        "basic": {
+          "name": "Thunder Strike",
+          "description": "Deals 120% damage.",
+          "damage": 1.2
+        },
+        "skill": {
+          "name": "Thunderstorm",
+          "description": "Deals AoE damage to all enemies.",
+          "damage": 1.5,
+          "isAoE": true
+        },
+        "ultimate": {
+          "name": "Thunder Dragon Tempest",
+          "description": "Deals 180% DMG to 3 random enemies, repeated 3 times. Restores 10% HP to the ally with the lowest HP.",
+          "damage": 1.8,
+          "hits": 3,
+          "targetsRandom": true,
+          "targetCount": 3,
+          "healWeakestAlly": 0.1
+        }
+      },
+      "passive": {
+        "name": "Weather Queen",
+        "description": "Increases all allies' Speed by 10%. After casting Ultimate, grants a small shield to the weakest ally.",
+        "speedBonus": 0.1,
+        "teamWide": true,
+        "shieldAfterUltimate": 0.15,
+        "targetsWeakest": true
+      }
+    },
+    {
+      "id": "uta_film_red",
+      "name": "Uta (Film Red)",
+      "tier": "UR",
+      "event": "Film Red",
+      "role": ["Damage"],
+      "element": "Sound",
+      "stats": {
+        "hp": 1400,
+        "atk": 1050,
+        "def": 450,
+        "speed": 115,
+        "critRate": 50,
+        "critDamage": 200
+      },
+      "skills": {
+        "basic": {
+          "name": "Sound Blade",
+          "description": "Deals 130% damage.",
+          "damage": 1.3
+        },
+        "skill": {
+          "name": "Melody Strike",
+          "description": "Deals 150% damage and applies Silence.",
+          "damage": 1.5,
+          "appliesEffect": "Silence",
+          "duration": 1
+        },
+        "ultimate": {
+          "name": "Last Wish Melody",
+          "description": "Deals 200% DMG to a single target twice. Ignores all Defense.",
+          "damage": 2.0,
+          "hits": 2,
+          "defIgnore": 1.0,
+          "targetSingle": true
+        }
+      },
+      "passive": {
+        "name": "Song of Destiny",
+        "description": "Increases Critical Rate by 20%. When defeating an enemy, gains 10 Rage.",
+        "critRateBonus": 0.2,
+        "rageOnKill": 10
+      }
+    },
+    {
+      "id": "joy_boy",
+      "name": "Joy Boy",
+      "tier": "UR",
+      "event": "Ancient Legend",
+      "role": ["Tank", "Damage"],
+      "element": "Physical",
+      "stats": {
+        "hp": 2200,
+        "atk": 900,
+        "def": 800,
+        "speed": 100,
+        "critRate": 25,
+        "critDamage": 150
+      },
+      "skills": {
+        "basic": {
+          "name": "Divine Strike",
+          "description": "Deals 130% damage.",
+          "damage": 1.3
+        },
+        "skill": {
+          "name": "Sun Protection",
+          "description": "Grants shield equal to 20% Max HP.",
+          "shieldAmount": 0.2,
+          "targetTeam": true
+        },
+        "ultimate": {
+          "name": "Sun God's Judgment",
+          "description": "Deals 280% DMG to all enemies. Gains a Shield equal to 30% of Max HP for 1 turn.",
+          "damage": 2.8,
+          "isAoE": true,
+          "selfShield": 0.3,
+          "duration": 1
+        }
+      },
+      "passive": {
+        "name": "Ancient Warrior",
+        "description": "Reduces damage taken by 15%. Restores 5% HP at the start of every turn.",
+        "damageReduction": 0.15,
+        "regenPerTurn": 0.05
+      }
+    },
+    {
+      "id": "perona_lady_ghost",
+      "name": "Perona (Lady Ghost)",
+      "tier": "UR",
+      "event": "Thriller Bark Reminiscence",
+      "role": ["Support"],
+      "element": "Supernatural",
+      "stats": {
+        "hp": 1300,
+        "atk": 650,
+        "def": 500,
+        "speed": 110,
+        "critRate": 20,
+        "critDamage": 120
+      },
+      "skills": {
+        "basic": {
+          "name": "Ghost Slash",
+          "description": "Deals 110% damage.",
+          "damage": 1.1
+        },
+        "skill": {
+          "name": "Negative Blast",
+          "description": "Reduces enemy ATK by 20% for 2 turns.",
+          "atkReduce": 0.2,
+          "duration": 2,
+          "isAoE": true
+        },
+        "ultimate": {
+          "name": "Negative Princess",
+          "description": "Deals 100% DMG to the enemy with the lowest HP. Restores 15% HP to all allies. Increases team DEF by 5% for 1 turn.",
+          "damage": 1.0,
+          "targetWeakest": true,
+          "healAll": 0.15,
+          "defBuffTeam": 0.05,
+          "duration": 1
+        }
+      },
+      "passive": {
+        "name": "Hollow Queen",
+        "description": "Healing effects increased by 15%.",
+        "healingBonus": 0.15
+      }
+    },
+    {
+      "id": "boa_hancock_summer",
+      "name": "Boa Hancock (Summer)",
+      "tier": "UR",
+      "event": "Summer Festival",
+      "role": ["Support", "Control"],
+      "element": "Physical",
+      "stats": {
+        "hp": 1500,
+        "atk": 800,
+        "def": 550,
+        "speed": 120,
+        "critRate": 35,
+        "critDamage": 170
+      },
+      "skills": {
+        "basic": {
+          "name": "Charm Strike",
+          "description": "Deals 120% damage.",
+          "damage": 1.2
+        },
+        "skill": {
+          "name": "Love Beam",
+          "description": "Petrifies 1 random enemy for 1 turn.",
+          "appliesEffect": "Petrify",
+          "duration": 1,
+          "targetRandom": true
+        },
+        "ultimate": {
+          "name": "Summer Love Hurricane",
+          "description": "Deals 300% DMG to all enemies. Stuns 2 random enemies for 1 turn. Reduces damage taken by allies by 5% for 1 turn.",
+          "damage": 3.0,
+          "isAoE": true,
+          "stunsRandom": 2,
+          "stunDuration": 1,
+          "damageReductionTeam": 0.05,
+          "duration": 1
+        }
+      },
+      "passive": {
+        "name": "Pirate Empress",
+        "description": "Grants allies 10% Resistance to Control effects.",
+        "controlResistance": 0.1,
+        "teamWide": true
+      }
+    },
+    {
+      "id": "vivi_festival",
+      "name": "Vivi (Festival)",
+      "tier": "UR",
+      "event": "Festival Celebration",
+      "role": ["Support"],
+      "element": "Physical",
+      "stats": {
+        "hp": 1600,
+        "atk": 650,
+        "def": 600,
+        "speed": 105,
+        "critRate": 15,
+        "critDamage": 110
+      },
+      "skills": {
+        "basic": {
+          "name": "Desert Dance",
+          "description": "Deals 110% damage.",
+          "damage": 1.1
+        },
+        "skill": {
+          "name": "Desert Healing",
+          "description": "Heals all allies for 20% HP.",
+          "healAmount": 0.2,
+          "targetTeam": true
+        },
+        "ultimate": {
+          "name": "Desert Princess Blessing",
+          "description": "Deals 120% DMG to all enemies. Grants all allies a Shield equal to 25% of Max HP for 1 turn. Reduces enemy damage by 10% for 1 turn.",
+          "damage": 1.2,
+          "isAoE": true,
+          "shieldTeam": 0.25,
+          "enemyDamageReduction": 0.1,
+          "duration": 1
+        }
+      },
+      "passive": {
+        "name": "Royal Grace",
+        "description": "Team Healing Effect +10%.",
+        "teamHealingBonus": 0.1
+      }
+    },
+    {
+      "id": "bonney_egghead",
+      "name": "Jewelry Bonney (Egghead)",
+      "tier": "UR",
+      "event": "Egghead Incident",
+      "role": ["Damage", "Debuffer"],
+      "element": "Magic",
+      "stats": {
+        "hp": 1450,
+        "atk": 900,
+        "def": 500,
+        "speed": 115,
+        "critRate": 30,
+        "critDamage": 160
+      },
+      "skills": {
+        "basic": {
+          "name": "Time Twist",
+          "description": "Deals 120% magic damage.",
+          "damage": 1.2,
+          "isMagic": true
+        },
+        "skill": {
+          "name": "Age Shift",
+          "description": "Reduces enemy ATK/DEF by 15% for 2 turns.",
+          "atkReduce": 0.15,
+          "defReduce": 0.15,
+          "duration": 2,
+          "isAoE": true
+        },
+        "ultimate": {
+          "name": "Age Distortion",
+          "description": "Deals 300% Magic DMG to all enemies. Inflicts Aging for 1 turn: Enemies take additional damage equal to 10% of the damage received during the previous turn. Grants Rejuvenation to all allies for 1 turn: Removes all debuffs. Grants immunity to new debuffs.",
+          "damage": 3.0,
+          "isAoE": true,
+          "isMagic": true,
+          "appliesEffectEnemy": "Aging",
+          "ageingDuration": 1,
+          "cleansesTeam": true,
+          "immunityNewDebuffs": 1
+        }
+      },
+      "passive": {
+        "name": "Future Possibility",
+        "description": "Magic DMG +15%. When an enemy is defeated, restores 5% HP to all allies.",
+        "magicDamageBonus": 0.15,
+        "healOnKill": 0.05
+      }
+    },
+    {
+      "id": "shanks_film_red",
+      "name": "Shanks (Film Red)",
+      "tier": "UR",
+      "event": "Film Red",
+      "role": ["Damage"],
+      "element": "Physical",
+      "stats": {
+        "hp": 1300,
+        "atk": 1100,
+        "def": 500,
+        "speed": 125,
+        "critRate": 50,
+        "critDamage": 210
+      },
+      "skills": {
+        "basic": {
+          "name": "Gryphon Slash",
+          "description": "Deals 135% damage.",
+          "damage": 1.35
+        },
+        "skill": {
+          "name": "Haki Pressure",
+          "description": "Reduces enemy Rage by 40.",
+          "rageReduce": 40
+        },
+        "ultimate": {
+          "name": "Divine Departure",
+          "description": "Deals 600% DMG to all enemies. Permanently increases own ATK by 5%. Effect stacks without limit.",
+          "damage": 6.0,
+          "isAoE": true,
+          "selfAtkBonus": 0.05,
+          "stackable": true,
+          "stackWithoutLimit": true
+        }
+      },
+      "passive": {
+        "name": "Emperor's Haki",
+        "description": "Critical Damage +30%.",
+        "critDamageBonus": 0.3
+      }
+    },
+    {
+      "id": "luffy_sun_god",
+      "name": "Luffy (Sun God)",
+      "tier": "UR",
+      "event": "Wano Arc - Nika Awakening",
+      "role": ["Tank", "Damage"],
+      "element": "Physical",
+      "stats": {
+        "hp": 2100,
+        "atk": 950,
+        "def": 700,
+        "speed": 110,
+        "critRate": 30,
+        "critDamage": 160
+      },
+      "skills": {
+        "basic": {
+          "name": "Rubber Strike",
+          "description": "Deals 130% damage.",
+          "damage": 1.3
+        },
+        "skill": {
+          "name": "Bounce Shield",
+          "description": "Grants shield equal to 15% Max HP.",
+          "shieldAmount": 0.15,
+          "targetTeam": true
+        },
+        "ultimate": {
+          "name": "Drums of Liberation",
+          "description": "Deals 300% DMG to all enemies twice. Gains a Shield equal to 20% Max HP for 1 turn.",
+          "damage": 3.0,
+          "isAoE": true,
+          "hits": 2,
+          "selfShield": 0.2,
+          "duration": 1
+        }
+      },
+      "passive": {
+        "name": "Nika Awakening",
+        "description": "Immune to Control effects while Shield is active.",
+        "immuneControl": true,
+        "requiresShield": true
+      }
+    },
+    {
+      "id": "kaido_king_of_beasts",
+      "name": "Kaido (King of Beasts)",
+      "tier": "UR",
+      "event": "Wano Arc - Final Battle",
+      "role": ["Damage"],
+      "element": "Physical",
+      "stats": {
+        "hp": 2000,
+        "atk": 1050,
+        "def": 750,
+        "speed": 105,
+        "critRate": 35,
+        "critDamage": 180
+      },
+      "skills": {
+        "basic": {
+          "name": "Kanabo Strike",
+          "description": "Deals 130% damage.",
+          "damage": 1.3
+        },
+        "skill": {
+          "name": "Dragon Power",
+          "description": "Increases own ATK by 25% for 2 turns.",
+          "atkBoost": 0.25,
+          "duration": 2
+        },
+        "ultimate": {
+          "name": "Flaming Thunder Bagua",
+          "description": "Deals 400% DMG to all enemies twice.",
+          "damage": 4.0,
+          "isAoE": true,
+          "hits": 2
+        }
+      },
+      "passive": {
+        "name": "Strongest Creature",
+        "description": "Gains 10% Lifesteal. Cannot be defeated by a single hit once per battle.",
+        "lifesteal": 0.1,
+        "oneShotProtection": true,
+        "protectionPerBattle": 1
+      }
+    },
+    {
+      "id": "hiyori_wano",
+      "name": "Hiyori (Wano)",
+      "tier": "UR",
+      "event": "Wano Arc - Princess",
+      "role": ["Healer"],
+      "element": "Physical",
+      "stats": {
+        "hp": 1700,
+        "atk": 600,
+        "def": 650,
+        "speed": 100,
+        "critRate": 15,
+        "critDamage": 120
+      },
+      "skills": {
+        "basic": {
+          "name": "Gentle Touch",
+          "description": "Deals 100% damage and heals for 10% of damage.",
+          "damage": 1.0,
+          "heal": 0.1
+        },
+        "skill": {
+          "name": "Moonlight Healing",
+          "description": "Heals all allies for 25% HP.",
+          "healAmount": 0.25,
+          "targetTeam": true
+        },
+        "ultimate": {
+          "name": "Moonlight Melody",
+          "description": "Restores 20% of lost HP to all allies. Reduces damage taken by allies by 10% for 1 turn.",
+          "healMissing": 0.2,
+          "targetTeam": true,
+          "damageReductionTeam": 0.1,
+          "duration": 1
+        }
+      },
+      "passive": {
+        "name": "Wano Princess",
+        "description": "Healing Effect +20%.",
+        "healingBonus": 0.2
+      }
+    }
+  ]
+}
